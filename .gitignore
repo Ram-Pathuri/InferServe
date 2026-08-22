@@ -21,8 +21,7 @@ logs/
 .idea/
 
 # Jupyter
-.ipynb_checkpoints/
-*.test.ipynb
+*.ipynb
 
 
 # OS
