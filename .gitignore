@@ -22,6 +22,8 @@ logs/
 
 # Jupyter
 .ipynb_checkpoints/
+*.test.ipynb
+
 
 # OS
 .DS_Store
