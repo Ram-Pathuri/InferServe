@@ -1,2 +1,28 @@
-/app.log
-/test.ipynb
+# Virtual environments
+.venv/
+venv/
+env/
+ModelServing_virtual_env/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
