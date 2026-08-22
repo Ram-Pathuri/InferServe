@@ -30,7 +30,7 @@ We are in **Week 1: the core FastAPI service.** Nothing is containerized or depl
 ### In progress this week
 | Component | Status | Detail |
 |---|---|---|
-| Project skeleton | 🔲 Not started | Routers, Pydantic v2 schemas, settings via `pydantic-settings` |
+| Project skeleton | 🟡 In progress | Routers, Pydantic v2 schemas, settings via `pydantic-settings` |
 | Model loading | 🔲 Not started | Loaded once at app startup via FastAPI `lifespan` events, not per-request |
 | Prediction endpoint | 🔲 Not started | `POST /v1/predict` — validates input, returns prediction + confidence |
 | Database layer | 🔲 Not started | Async SQLAlchemy + PostgreSQL, logs every prediction (input, output, latency, model version) |
@@ -39,15 +39,14 @@ We are in **Week 1: the core FastAPI service.** Nothing is containerized or depl
 | Tests | 🔲 Not started | pytest + httpx async client, target 80%+ coverage |
 | CI | 🔲 Not started | GitHub Actions — lint (ruff) + test on every push |
 
-*(Update this table's status column as you complete each piece — 🔲 → 🟡 in progress → ✅ done.)*
+🔲 → 🟡 in progress → ✅ done.)*
 
 ### Why this order matters
 Docker and Kubernetes are meaningless without something worth containerizing. Week 1 exists so that by Week 2, you're not debugging your API *and* Docker at the same time — you're containerizing something you already know works.
 
 ---
 
-## 3. Architecture (Target — End of Week 3)
-
+## 3. Architecture 
 ```
                         ┌─────────────────────────┐
                         │        Ingress           │
